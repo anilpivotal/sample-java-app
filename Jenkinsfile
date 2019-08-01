@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello World!"
-                pack build myapp
+                sh "pack build myapp"
             }
         }
     }
