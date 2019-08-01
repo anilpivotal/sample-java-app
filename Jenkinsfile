@@ -1,4 +1,11 @@
-node {
-  echo "Testing webhook "
-  pack build newapp
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Hello World!"
+            }
+        }
+    }
 }
+
