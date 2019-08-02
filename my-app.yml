@@ -34,5 +34,5 @@ spec:
         name: myapp
         ports:
         - containerPort: 8080
-        imagePullPolicy: Always        
+        imagePullPolicy: Always
         name: myapp
