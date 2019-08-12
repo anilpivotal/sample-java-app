@@ -12,7 +12,6 @@ spec:
     app: myapp
     tier: myapp
   type: LoadBalancer
-
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
