@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Hello World!"
                 //sh "pack build myapp"
-                sh "docker login"
+                sh "docker login registry-1.docker.io"
                 sh "pack build anilpivotal/my-image:myapp-v1 --publish"
                 //sh "kubectl delete deployment myapp"
                 //sh "kubectl delete services myapp"
