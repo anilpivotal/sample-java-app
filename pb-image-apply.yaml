@@ -1,0 +1,7 @@
+source:
+  git:
+    url: https://github.com/anilpivotal/sample-java-app
+    revision: master
+build:
+image:
+  tag: index.docker.io/anilpivotal/my-image:test
