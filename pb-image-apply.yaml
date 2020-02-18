@@ -4,4 +4,4 @@ source:
     revision: master
 build:
 image:
-  tag: index.docker.io/anilpivotal/my-image:test-2
+  tag: index.docker.io/anilpivotal/my-image:test
