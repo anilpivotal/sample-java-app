@@ -8,8 +8,8 @@ pipeline {
                 sh "docker login registry-1.docker.io"
                 sh "pack build anilpivotal/my-image:myapp-v1 --publish"
                 //sh "pb image apply -f pb-image-apply.yaml" 
-                //sh "kubectl delete deployment myapp"
-                //sh "kubectl delete services myapp"
+                sh "kubectl delete deployment myapp -n test"
+                sh "kubectl delete services myapp -n test"
                 sh "kubectl apply -f my-app.yml -n test"
                 
                 //   sh "docker run --rm -p 8080:8080 myapp" 
