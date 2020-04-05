@@ -20,6 +20,9 @@ metadata:
   labels:
     app: myapp
 spec:
+  selector:
+    matchLabels:
+      app: myapp
   strategy:
     type: Recreate
   template:
