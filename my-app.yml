@@ -32,7 +32,7 @@ spec:
         tier: myapp
     spec:
       containers:
-      - image: anilpivotal/my-image:myapp-v1
+      - image: anilpivotal/my-image:test
         name: myapp
         ports:
         - containerPort: 8080
